@@ -1,0 +1,80 @@
+.container {
+    background-color: #FF4560;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container:hover {
+    background-color: #ff4560;
+}
+
+
+.heading h2 {
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container:hover .heading h2 {
+    color: #ffffff !important;
+}
+
+.icon svg{
+    fill: #000000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container:hover .icon svg {
+    fill: #ffffff !important;
+}
+
+
+.text {
+    color: #000000 !important;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.container:hover .text {
+    color: #ffffff !important;
+}
+
+
+/* This part disables the transform effects on hover for mobile devices - devices under 767px. Delete this if you want the transform to happen on mobile or if you have no transform properties. */
+
+@media only screen and (max-width: 767px) {
+
+    .container:hover .heading h2 {
+        transform: none !important;
+    }
+    
+     .container:hover .icon svg {
+        transform: none !important;
+    }
+    
+     .container:hover .text {
+        transform: none !important;
+    }
+}
+
+/* This part neutralizes the color change on hover for mobile devices - devices under 767px. Make sure the colors match your normal state, pre-hover colors. Delete this if you want the color changes to happen on mobile as well. */
+
+@media only screen and (max-width: 767px) {
+    
+    .container:hover {
+    background-color: #F7EA48 !important;
+    }
+    
+    .container:hover .heading h2 {
+        color: #000000 !important;
+    }
+    
+    .container:hover .icon svg {
+        fill: #000000 !important;
+    }
+    
+    .container:hover .text {
+        color: #000000 !important;
+    }
+}
